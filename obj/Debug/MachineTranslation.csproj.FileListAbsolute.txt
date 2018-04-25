@@ -1,0 +1,32 @@
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\MachineTranslation.dll
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\MachineTranslation.pdb
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\SystranClientTranslationApiLib.dll
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\Telerik.Sitefinity.Translations.dll
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\RestSharp.dll
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\Newtonsoft.Json.dll
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\SystranClientTranslationApiLib.pdb
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\Telerik.Sitefinity.Translations.xml
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\RestSharp.xml
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\bin\Debug\Newtonsoft.Json.xml
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\obj\Debug\MachineTranslation.csprojResolveAssemblyReference.cache
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\obj\Debug\MachineTranslation.dll
+C:\temp\10,2\Projects\MachineTranslation\MachineTranslation\obj\Debug\MachineTranslation.pdb
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\MachineTranslation.dll
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\MachineTranslation.pdb
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\RestSharp.dll
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\Newtonsoft.Json.dll
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\RestSharp.xml
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\Newtonsoft.Json.xml
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\obj\Debug\MachineTranslation.dll
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\obj\Debug\MachineTranslation.pdb
+C:\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\MachineTranslation.dll.config
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\obj\Debug\MachineTranslation.csprojResolveAssemblyReference.cache
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\obj\Debug\MachineTranslation.dll
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\obj\Debug\MachineTranslation.pdb
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\MachineTranslation.dll.config
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\MachineTranslation.dll
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\MachineTranslation.pdb
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\RestSharp.dll
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\Telerik.Sitefinity.Translations.dll
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\RestSharp.xml
+C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\Telerik.Sitefinity.Translations.xml

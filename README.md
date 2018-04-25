@@ -20,7 +20,7 @@ Add the *Systran Machine Translation* sample project to your solution. To do thi
 2. Add Telerik.Sitefinity.Translations.SystranMachineTranslation project to the same solution
 3. In **SystranMachineTranslation** add a reference to the **SystranClientTranslationApiLib** assembly. Download from Systran Natural Language Processing .Net Client Library from https://github.com/SYSTRAN/nlp-api-csharp-client.
 4. Ensure Telerik.Sitefinity.Translations nuget package is installed in **SystranMachineTranslation**.
-5. In **SitefinityWebApp**, add a reference to the **SystranMachineTranslation** project
+5. In **SitefinityWebApp**, add a reference to the **SystranMachineTranslation** project.
 6. In **SitefinityWebApp** add apiKey.txt file containing key obtained from Systran.io https://platform.systran.net/user/admin#/apiKeys .
 7. Compile your solution
 

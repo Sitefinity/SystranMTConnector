@@ -24,10 +24,10 @@ Add the *Systran Machine Translation* sample project to your solution. To do thi
 6. In **SitefinityWebApp** add apiKey.txt file containing key obtained from Systran.io https://platform.systran.net/user/admin#/apiKeys .
 7. Compile your solution
 8. Add the following binding redirect to the web.config of **SitefinityWebApp**
-&lt;dependentAssembly&lt;
-    &lt;assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" /&lt;
-    &lt;bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="10.0.0.0" /&lt;
-&lt;/dependentAssembly&lt;
+&lt;dependentAssembly&gt;
+    &lt;assemblyIdentity name="Newtonsoft.Json" publicKeyToken="30ad4fe6b2a6aeed" culture="neutral" /&gt;
+    &lt;bindingRedirect oldVersion="0.0.0.0-11.0.0.0" newVersion="10.0.0.0" /&gt;
+&lt;/dependentAssembly&gt;
 
 ## Create and configure the connector
 

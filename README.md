@@ -17,9 +17,12 @@ You should either use country specific languages like 'en-US' and not just 'en' 
 Add the *Systran Machine Translation* sample project to your solution. To do this:
 
 1. In Visual Studio, open your Sitefinity CMS web application solution.
-2. In the **SitefinityWebApp**, add a reference to the <strong>Telerik.Sitefinity.Translations.SystranMachineTranslationConnector</strong> assembly.
-3. In the **SitefinityWebApp**, add a reference to the <strong>SystranClientTranslationApiLib<strong> assembly. Download from Systran Natural Language Processing .Net Client Library from https://github.com/SYSTRAN/nlp-api-csharp-client.
-
+2. Add Telerik.Sitefinity.Translations.SystranMachineTranslation project to the same solution
+3. In **SystranMachineTranslation** add a reference to the <strong>SystranClientTranslationApiLib<strong> assembly. Download from Systran Natural Language Processing .Net Client Library from https://github.com/SYSTRAN/nlp-api-csharp-client.
+4. Ensure Telerik.Sitefinity.Translations nuget package is installed in **SystranMachineTranslation**.
+5. In **SitefinityWebApp**, add a reference to the **SystranMachineTranslation** project
+6. In **SitefinityWebApp** add apiKey.txt file containing key obtained from Systran.io https://platform.systran.net/user/admin#/apiKeys .
+7. Compile your solution
 
 ## Create and configure the connector
 
@@ -31,7 +34,10 @@ To configure the *SystranMachineTranslationConnector* connector in Sitefinity CM
 4. In <i>Connector type</i>, enter <strong>Telerik.Sitefinity.Translations.SystranMachineTranslationConnector</strong>.
 5. To enable the connector, in the <i>Enabled</i> field, enter <strong>true</strong>.
 6. Save your changes.
-7.In your web app folder add api key file obtained fro Systran.io [TBD] add link
+7. For MVC widgets follow the documentation https://docs.sitefinity.com/administration-translate-mvc-widgets 
+8. For optimal translation time apply the following settings:
+ Advanced Settings > Translations > Scheduling > Sync settings > Auto sync cron specification: */0,1 * * * *, Timeout: 1
+
 
 ## Systran Natural Language Processing .Net Client Library
 https://github.com/SYSTRAN/nlp-api-csharp-client 

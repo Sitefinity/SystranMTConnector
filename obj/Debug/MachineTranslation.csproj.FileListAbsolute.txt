@@ -30,3 +30,10 @@ C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\RestSharp.dll
 C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\Telerik.Sitefinity.Translations.dll
 C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\RestSharp.xml
 C:\temp\beta 11.0\Projects\April24\MachineTranslation\bin\Debug\Telerik.Sitefinity.Translations.xml
+C:\Users\lmessech\Documents\GitHub\SystranMTConnector\bin\Debug\MachineTranslation.dll
+C:\Users\lmessech\Documents\GitHub\SystranMTConnector\bin\Debug\MachineTranslation.pdb
+C:\Users\lmessech\Documents\GitHub\SystranMTConnector\bin\Debug\RestSharp.xml
+C:\Users\lmessech\Documents\GitHub\SystranMTConnector\bin\Debug\Telerik.Sitefinity.Translations.xml
+C:\Users\lmessech\Documents\GitHub\SystranMTConnector\obj\Debug\MachineTranslation.csprojResolveAssemblyReference.cache
+C:\Users\lmessech\Documents\GitHub\SystranMTConnector\obj\Debug\MachineTranslation.dll
+C:\Users\lmessech\Documents\GitHub\SystranMTConnector\obj\Debug\MachineTranslation.pdb

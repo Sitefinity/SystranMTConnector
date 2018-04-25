@@ -48,10 +48,10 @@
     <Reference Include="System.Xml" />
     <Reference Include="SystranClientTranslationApiLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\SystranClientTranslationApiLib.dll</HintPath>
+      <HintPath>..\..\..\..\..\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\SystranClientTranslationApiLib.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Translations, Version=11.0.6650.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
-      <HintPath>..\packages\Telerik.Sitefinity.Translations.11.0.6650-beta\lib\net471\Telerik.Sitefinity.Translations.dll</HintPath>
+      <HintPath>..\..\..\..\..\temp\beta 11.0\Projects\April24\packages\Telerik.Sitefinity.Translations.11.0.6650-beta\lib\net471\Telerik.Sitefinity.Translations.dll</HintPath>
       <Private>True</Private>
     </Reference>
   </ItemGroup>

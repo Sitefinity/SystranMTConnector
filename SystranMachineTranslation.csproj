@@ -7,8 +7,8 @@
     <ProjectGuid>{BDAADAF1-5D13-4227-A097-4EA856BAFC69}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MachineTranslation</RootNamespace>
-    <AssemblyName>MachineTranslation</AssemblyName>
+    <RootNamespace>Progress.Sitefinity.Translations</RootNamespace>
+    <AssemblyName>SystranMachineTranslation</AssemblyName>
     <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

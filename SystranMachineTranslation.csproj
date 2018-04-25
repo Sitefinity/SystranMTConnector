@@ -56,7 +56,7 @@
     <Reference Include="System.Xml" />
     <Reference Include="SystranClientTranslationApiLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Debug\SystranClientTranslationApiLib.dll</HintPath>
+      <HintPath>..\..\..\..\..\temp\11.0\Projects\MachineTranslation\MachineTranslation\bin\Debug\SystranClientTranslationApiLib.dll</HintPath>
     </Reference>
     <Reference Include="Telerik.Sitefinity.Translations, Version=11.0.6650.0, Culture=neutral, PublicKeyToken=b28c218413bdf563, processorArchitecture=MSIL">
       <HintPath>..\packages\Telerik.Sitefinity.Translations.11.0.6650-beta\lib\net471\Telerik.Sitefinity.Translations.dll</HintPath>
@@ -71,6 +71,39 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+    <None Include="packages\RestSharp.105.2.3\RestSharp.105.2.3.nupkg" />
+    <None Include="packages\Telerik.Sitefinity.Translations.11.0.6650-beta\Telerik.Sitefinity.Translations.11.0.6650-beta.nupkg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages\RestSharp.105.2.3\lib\MonoAndroid10\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\MonoAndroid10\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\MonoTouch10\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\MonoTouch10\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net35\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net35\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net4-client\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net4-client\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net451\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net451\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net452\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net452\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net45\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net45\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net46\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net46\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net4\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\net4\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\sl5\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\sl5\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\windowsphone81\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\windowsphone81\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\windowsphone8\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\windowsphone8\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\lib\Xamarin.iOS10\RestSharp.dll" />
+    <Content Include="packages\RestSharp.105.2.3\lib\Xamarin.iOS10\RestSharp.xml" />
+    <Content Include="packages\RestSharp.105.2.3\readme.txt" />
+    <Content Include="packages\Telerik.Sitefinity.Translations.11.0.6650-beta\lib\net471\Telerik.Sitefinity.Translations.dll" />
+    <Content Include="packages\Telerik.Sitefinity.Translations.11.0.6650-beta\lib\net471\Telerik.Sitefinity.Translations.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

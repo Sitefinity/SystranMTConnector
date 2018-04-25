@@ -17,6 +17,7 @@ You should either use country specific languages like 'en-US' and not just 'en' 
 Add the *Systran Machine Translation* sample project to your solution. To do this:
 
 1. In Visual Studio, open your Sitefinity CMS web application solution.
+3. Open 
 2. In the **SitefinityWebApp**, add a reference to the <strong>Telerik.Sitefinity.Translations.SystranMachineTranslationConnector</strong> assembly.
 
 
@@ -32,6 +33,6 @@ To configure the *SystranMachineTranslationConnector* connector in Sitefinity CM
 6. Save your changes.
 7.In your web app folder add api key file obtained fro Systran.io [TBD] add link
 
-##API Overview: Systran [TBD] add link
-
+## Systran Natural Language Processing .Net Client Library
+https://github.com/SYSTRAN/nlp-api-csharp-client 
 

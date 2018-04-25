@@ -15,9 +15,9 @@ using Systran.TranslationClientLib.Model;
 using System.Threading.Tasks;
 using System.ComponentModel;
 
-namespace MachineTranslation
+namespace Progress.Sitefinity.Translations
 {
-    public class MachineTranslationConnector : TranslationConnectorBase
+    public class SystranMachineTranslationConnector : TranslationConnectorBase
     {
         public NameValueCollection Config
         {
@@ -48,11 +48,13 @@ namespace MachineTranslation
             Task.Run(
                 () =>
                 {
-
+                    //get original xliff files
                     var xliffFile = evnt.GetXliffFile();
 
+                    // translate xliff file
                     this.TranslateXliff(xliffFile, evnt.ActualSourceLanguage, evnt.TargetLanguage);
 
+                    // add task for review of the translated xliff in the queue
                     var reviewTransEvnt = new ReviewTranslationTaskEvent(xliffFile)
                     {
                         ProjectId = projectId
@@ -173,7 +175,7 @@ namespace MachineTranslation
 
         internal class DummyMessageQueue : EventMessageQueue<EventMessage>
         {
-            public DummyMessageQueue(MachineTranslationConnector connector)
+            public DummyMessageQueue(SystranMachineTranslationConnector connector)
             {
                 this.connector = connector;
             }
@@ -188,7 +190,7 @@ namespace MachineTranslation
                 return queue.Dequeue();
             }
 
-            private readonly MachineTranslationConnector connector;
+            private readonly SystranMachineTranslationConnector connector;
         }
 
         private static ApiClient client;

@@ -44,6 +44,3 @@ To configure the *SystranMachineTranslationConnector* connector in Sitefinity CM
  Advanced Settings > Translations > Scheduling > Sync settings > Auto sync cron specification: */0,1 * * * *, Timeout: 1
 
 
-## Systran Natural Language Processing .Net Client Library
-https://github.com/SYSTRAN/nlp-api-csharp-client 
-

@@ -45,28 +45,24 @@ namespace Progress.Sitefinity.Translations
             translationId = string.Empty;
             var projectId = evnt.ProjectId;
 
-            Task.Run(
-                () =>
-                {
-                    //get original xliff files
-                    var xliffFile = evnt.GetXliffFile();
 
-                    // translate xliff file
-                    this.TranslateXliff(xliffFile, evnt.ActualSourceLanguage, evnt.TargetLanguage);
+            //get original xliff files
+            var xliffFile = evnt.GetXliffFile();
 
-                    // add task for review of the translated xliff in the queue
-                    var reviewTransEvnt = new ReviewTranslationTaskEvent(xliffFile)
-                    {
-                        ProjectId = projectId
-                    };
+            // translate xliff file
+            this.TranslateXliff(xliffFile, evnt.ActualSourceLanguage, evnt.TargetLanguage);
 
-                    this.waitingMessages.Enqueue(
-                        new Tuple<DateTime, EventMessage>(
-                            DateTime.UtcNow.AddSeconds(1),
-                            reviewTransEvnt));
-                }
-                );     
-            
+            // add task for review of the translated xliff in the queue
+            var reviewTransEvnt = new ReviewTranslationTaskEvent(xliffFile)
+            {
+                ProjectId = projectId
+            };
+
+            this.waitingMessages.Enqueue(
+                new Tuple<DateTime, EventMessage>(
+                    DateTime.UtcNow.AddSeconds(1),
+                    reviewTransEvnt));
+
             return true;
         }
 

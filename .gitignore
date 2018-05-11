@@ -1,28 +1,9 @@
+# Build Folders (you can keep bin if you'd like, to store dlls and pdbs)
+[Bb]in/
+[Oo]bj/
 
-*.dll
-*.pdb
-*.cache
-*.user
-obj/Debug/SystranMachineTranslation.csproj.FileListAbsolute.txt
-obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
-obj/Debug/TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs
-obj/Debug/TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs
-bin/Debug/Telerik.Sitefinity.Translations.xml
-bin/Debug/RestSharp.xml
-.vs/SystranMachineTranslation/v14/.suo
-.vs/MachineTranslation/v14/.suo
-SystranMachineTranslation.sln
-bin/Debug/Telerik.Sitefinity.Translations.xml
-bin/Debug/RestSharp.xml
-.vs/SystranMachineTranslation/v14/.suo
-bin/Debug/RestSharp.xml
-bin/Debug/Telerik.Sitefinity.Translations.xml
-.vs/SystranMachineTranslation/v14/.suo
-.vs/SystranMachineTranslation/v14/.suo
-MachineTranslation.sln
-.vs/SystranMachineTranslation/v14/.suo
-bin/Debug/Newtonsoft.Json.xml
-.vs/SystranMachineTranslation/v14/.suo
-.vs/SystranMachineTranslation/v14/.suo
-bin/Debug/SystranMachineTranslation.dll.config
+# NuGet Packages Directory
+/packages
+
+/.vs
 app.config

@@ -34,3 +34,5 @@ To configure the *SystranMachineTranslationConnector* connector in Sitefinity CM
 4. In <i>Connector type</i>, enter <strong>Progress.Sitefinity.Translations.SystranMachineTranslationConnector</strong>.
 5. To enable the connector, in the <i>Enabled</i> field, enter <strong>true</strong>.
 6. Save your changes.
+
+Note: Systran.io is not supporting culture-specific languages.

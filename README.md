@@ -12,7 +12,7 @@ Sitefinity CMS license
 
 Your Sitefinity CMS web site must be in multilingual mode meaning that you have added atleast one additinal language to the current website you are browsing. Otherwise you will not see the translations screen in the administrations tab of your application.
 
-You should either use country specific languages like 'en-US' and not just 'en' or specify a mapping between the country invariant and country specific language in the translations advanced settings screen: <i>Administration >> Settings >> Advanced >> Culture mappings </i> text box.
+Currently, Systran machine translation service does not support specific languages like 'en-US', you can use neutral culture like 'en', or specify a mapping between the specific culture and neutral culture in the translations advanced settings screen: <i>Administration >> Settings >> Advanced >> Culture mappings </i> text box.
 
 Add the *Systran Machine Translation* sample project to your solution. To do this:
 
@@ -31,11 +31,6 @@ To configure the *SystranMachineTranslationConnector* connector in Sitefinity CM
 1. Navigate to <i>Administration >> Settings >> Advanced >> Translations >> Connectors >> Create new</i>.
 2. In <i>Connector name</i>, enter <strong>SystranMachineTranslation</strong>.
 3. In <i>Connector title</i>, enter <strong>Systran Machine Translation</strong>.
-4. In <i>Connector type</i>, enter <strong>Telerik.Sitefinity.Translations.SystranMachineTranslationConnector</strong>.
+4. In <i>Connector type</i>, enter <strong>Progress.Sitefinity.Translations.SystranMachineTranslationConnector</strong>.
 5. To enable the connector, in the <i>Enabled</i> field, enter <strong>true</strong>.
 6. Save your changes.
-7. For MVC widgets follow the documentation https://docs.sitefinity.com/administration-translate-mvc-widgets 
-8. For optimal translation time apply the following settings:
- Advanced Settings > Translations > Scheduling > Sync settings > Auto sync cron specification: */0,1 * * * *, Timeout: 1
-
-

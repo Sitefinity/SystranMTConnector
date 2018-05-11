@@ -1,6 +1,6 @@
 # Progress.Sitefinity.Translations.SystranMachineTranslationConnector
 
-### This repository is not automatically upgraded to latest Sitefintiy version. The repository is monitored for pull requests and fixes. The version of Sitefinity that supports this sample is v11.0. If you successfully upgrade the example to a greater version, please share your work with the community by submitting your changes via pull request.
+### The version of Sitefinity that supports this sample is v11.0.
 
 When working with the Sitefinity CMS *Translation* module, you can benefit from a number of translation connectors that you use out-of-the-box with minimum setup. You can, however, implement your own translation connector with custom logic to serve your requirements. 
 

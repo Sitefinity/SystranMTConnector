@@ -1,6 +1,6 @@
 # Progress.Sitefinity.Translations.SystranMachineTranslationConnector
 
-### This repository is not automatically upgraded to latest Sitefintiy version. The repository is monitored for pull requests and fixes. The latest official version of Sitefinity that supports this sample is v11.0 Beta. Be aware that using a higher version could cause unexpected behavior. If you successfully upgrade the example to a greater version, please share your work with the community by submitting your changes via pull request.
+### This repository is not automatically upgraded to latest Sitefintiy version. The repository is monitored for pull requests and fixes. The version of Sitefinity that supports this sample is v11.0. If you successfully upgrade the example to a greater version, please share your work with the community by submitting your changes via pull request.
 
 When working with the Sitefinity CMS *Translation* module, you can benefit from a number of translation connectors that you use out-of-the-box with minimum setup. You can, however, implement your own translation connector with custom logic to serve your requirements. 
 
@@ -12,7 +12,7 @@ Sitefinity CMS license
 
 Your Sitefinity CMS web site must be in multilingual mode meaning that you have added atleast one additinal language to the current website you are browsing. Otherwise you will not see the translations screen in the administrations tab of your application.
 
-Currently, Systran machine translation service does not support specific languages like 'en-US', you can use neutral culture like 'en', or specify a mapping between the specific culture and neutral culture in the translations advanced settings screen: <i>Administration >> Settings >> Advanced >> Culture mappings </i> text box.
+Currently, **Systran.io** machine translation service does not support specific languages like 'en-US', you can use neutral culture like 'en', or specify a mapping between the specific culture and neutral culture in the translations advanced settings screen: <i>Administration >> Settings >> Advanced >> Culture mappings </i> text box.
 
 Add the *Systran Machine Translation* sample project to your solution. To do this:
 

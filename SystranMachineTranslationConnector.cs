@@ -7,8 +7,15 @@ using System.Text;
 using Systran;
 using Systran.TranslationClientLib.Api;
 using Systran.TranslationClientLib.Client;
+using Progress.Sitefinity.Translations;
 using Telerik.Sitefinity.Translations;
 
+[assembly: TranslationConnector(name: SystranMachineTranslationConnector.ConnectorName,
+                                connectorType: typeof(SystranMachineTranslationConnector),
+                                title: SystranMachineTranslationConnector.ConnectorTitle,
+                                enabled: true,
+                                removeHtmlTags: false,
+                                parameters: new string[] { })]
 namespace Progress.Sitefinity.Translations
 {
     public class SystranMachineTranslationConnector : MachineTranslationConnector
@@ -49,6 +56,9 @@ namespace Progress.Sitefinity.Translations
 
             return output;
         }
+
+        internal const string ConnectorName = "SystranMachineTranslation";
+        internal const string ConnectorTitle = "Systran Machine Translation";
 
         private ApiClient client;
         private TranslationApi translationApi;

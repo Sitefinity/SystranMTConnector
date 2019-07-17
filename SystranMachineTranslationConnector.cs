@@ -19,7 +19,7 @@ namespace Progress.Sitefinity.Translations
             if (!File.Exists(System.Web.Hosting.HostingEnvironment.MapPath("~/apiKey.txt")))
                 throw new Exception("To properly run the tests, please add an apiKey.txt file containing your api key in the SystranClientTranslationApiLibTests folder or edit the test file with your key");
 
-            this.client = new ApiClient("https://api-platform.systran.net");
+            this.client = new ApiClient("http://translate.systran.net");
             Configuration.apiClient = client;
             Dictionary<String, String> keys = new Dictionary<String, String>();
             string key;

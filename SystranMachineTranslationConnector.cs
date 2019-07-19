@@ -13,9 +13,8 @@ using Telerik.Sitefinity.Translations;
 [assembly: TranslationConnector(name: SystranMachineTranslationConnector.ConnectorName,
                                 connectorType: typeof(SystranMachineTranslationConnector),
                                 title: SystranMachineTranslationConnector.ConnectorTitle,
-                                enabled: true,
-                                removeHtmlTags: false,
-                                parameters: new string[] { })]
+                                enabled: false,
+                                parameters: new string[] { SystranMachineTranslationConnector.ApiKey })]
 namespace Progress.Sitefinity.Translations
 {
     public class SystranMachineTranslationConnector : MachineTranslationConnector
@@ -23,18 +22,16 @@ namespace Progress.Sitefinity.Translations
         #region Initialization
         protected override void InitializeConnector(NameValueCollection config)
         {
-            if (!File.Exists(System.Web.Hosting.HostingEnvironment.MapPath("~/apiKey.txt")))
-                throw new Exception("To properly run the tests, please add an apiKey.txt file containing your api key in the SystranClientTranslationApiLibTests folder or edit the test file with your key");
+            var key = config.Get(SystranMachineTranslationConnector.ApiKey);
+            if (string.IsNullOrEmpty(key))
+            {
+                throw new ArgumentException(SystranMachineTranslationConnector.NoApiKeyExceptionMessage);
+            }
 
             this.client = new ApiClient("https://api-platform.systran.net");
             Configuration.apiClient = client;
             Dictionary<String, String> keys = new Dictionary<String, String>();
-            string key;
-            using (StreamReader streamReader = new StreamReader(System.Web.Hosting.HostingEnvironment.MapPath("~/apiKey.txt"), Encoding.UTF8))
-            {
-                key = streamReader.ReadToEnd();
-            }
-
+           
             keys.Add("key", key);
             Configuration.apiKey = keys;
             if (keys.Count == 0)
@@ -59,6 +56,8 @@ namespace Progress.Sitefinity.Translations
 
         internal const string ConnectorName = "SystranMachineTranslation";
         internal const string ConnectorTitle = "Systran Machine Translation";
+        internal const string ApiKey = "apiKey";
+        internal const string NoApiKeyExceptionMessage = "No API key configured for azure translations connector.";
 
         private ApiClient client;
         private TranslationApi translationApi;

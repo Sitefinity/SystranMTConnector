@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
-using System.IO;
 using System.Linq;
-using System.Text;
+using Progress.Sitefinity.Translations;
 using Systran;
 using Systran.TranslationClientLib.Api;
 using Systran.TranslationClientLib.Client;
-using Progress.Sitefinity.Translations;
 using Telerik.Sitefinity.Translations;
 
 [assembly: TranslationConnector(name: SystranMachineTranslationConnector.ConnectorName,

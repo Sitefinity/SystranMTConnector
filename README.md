@@ -1,6 +1,6 @@
 # Progress.Sitefinity.Translations.SystranMachineTranslationConnector
 
-### The version of Sitefinity that supports this sample is v11.0.
+### Latest supported version: Sitefinity CMS 12.1.7100.0
 
 When working with the Sitefinity CMS *Translation* module, you can benefit from a number of translation connectors that you use out-of-the-box with minimum setup. You can, however, implement your own translation connector with custom logic to serve your requirements. 
 
@@ -21,18 +21,17 @@ Add the *Systran Machine Translation* sample project to your solution. To do thi
 3. In **SystranMachineTranslation** add a reference to the **SystranClientTranslationApiLib** assembly. Download from Systran Natural Language Processing .Net Client Library from https://github.com/SYSTRAN/translation-api-csharp-client.
 4. Ensure Telerik.Sitefinity.Translations nuget package is installed in **SystranMachineTranslation**.
 5. In **SitefinityWebApp**, add a reference to the **SystranMachineTranslation** project.
-6. In **SitefinityWebApp** add apiKey.txt file containing key obtained from Systran.io https://platform.systran.net/user/admin#/apiKeys .
-7. Compile your solution
+6. Compile your solution
 
-## Create and configure the connector
+## Configure the connector
 
 To configure the *SystranMachineTranslationConnector* connector in Sitefinity CMS:
 
-1. Navigate to <i>Administration >> Settings >> Advanced >> Translations >> Connectors >> Create new</i>.
-2. In <i>Connector name</i>, enter <strong>SystranMachineTranslation</strong>.
-3. In <i>Connector title</i>, enter <strong>Systran Machine Translation</strong>.
-4. In <i>Connector type</i>, enter <strong>Progress.Sitefinity.Translations.SystranMachineTranslationConnector</strong>.
-5. To enable the connector, in the <i>Enabled</i> field, enter <strong>true</strong>.
-6. Save your changes.
+1. Navigate to <i>Administration >> Settings >> Advanced >> Translations >> Connectors </i>.
+2. Expand the <i>Parameters</i> section of the For <strong>SystranMachineTranslation</strong> connector, enter and save the following <i>Keys</i>: 
+   **NOTE:** The following parameters must be obtained from Systran.io https://platform.systran.net/user/admin#/apiKeys .
+ * <strong>apiKey</strong> </br>In <i>Value</i>, enter the api key
+3. To enable the connector, for <strong>SystranMachineTranslation</strong> in the <i>Enabled</i> field, enter <strong>true</strong>.
+4. Save your changes.
 
 Note: Systran.io is not supporting culture-specific languages.

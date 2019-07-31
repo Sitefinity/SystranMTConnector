@@ -26,7 +26,7 @@ namespace Progress.Sitefinity.Translations
                 throw new ArgumentException(SystranMachineTranslationConnector.NoApiKeyExceptionMessage);
             }
 
-            this.client = new ApiClient("https://api-platform.systran.net");
+            this.client = new ApiClient("http://translate.systran.net");
             Configuration.apiClient = client;
             Dictionary<String, String> keys = new Dictionary<String, String>();
            

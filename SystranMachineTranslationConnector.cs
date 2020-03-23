@@ -26,13 +26,13 @@ namespace Progress.Sitefinity.Translations
                 throw new ArgumentException(SystranMachineTranslationConnector.NoApiKeyExceptionMessage);
             }
 
-            var defaultApiUrl = "https://api-platform.systran.net";
-            if (string.IsNullOrEmpty(config.Get(SystranMachineTranslationConnector.ApiUrl)))
+            var apiUrl = "https://api-platform.systran.net";
+            if (!string.IsNullOrEmpty(config.Get(SystranMachineTranslationConnector.ApiUrl)))
             {
-                config.Set(SystranMachineTranslationConnector.ApiUrl, defaultApiUrl);
+                apiUrl = config.Get(SystranMachineTranslationConnector.ApiUrl);
             }
 
-            this.client = new ApiClient(config.Get(SystranMachineTranslationConnector.ApiUrl));
+            this.client = new ApiClient(apiUrl);
             Configuration.apiClient = client;
             Dictionary<String, String> keys = new Dictionary<String, String>();
            

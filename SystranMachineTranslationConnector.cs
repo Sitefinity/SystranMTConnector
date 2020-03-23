@@ -12,7 +12,7 @@ using Telerik.Sitefinity.Translations;
                                 connectorType: typeof(SystranMachineTranslationConnector),
                                 title: SystranMachineTranslationConnector.ConnectorTitle,
                                 enabled: false,
-                                parameters: new string[] { SystranMachineTranslationConnector.ApiKey })]
+                                parameters: new string[] { SystranMachineTranslationConnector.ApiKey, SystranMachineTranslationConnector.ApiUrl })]
 namespace Progress.Sitefinity.Translations
 {
     public class SystranMachineTranslationConnector : MachineTranslationConnector
@@ -26,7 +26,13 @@ namespace Progress.Sitefinity.Translations
                 throw new ArgumentException(SystranMachineTranslationConnector.NoApiKeyExceptionMessage);
             }
 
-            this.client = new ApiClient("http://translate.systran.net");
+            var defaultApiUrl = "https://api-platform.systran.net";
+            if (string.IsNullOrEmpty(config.Get(SystranMachineTranslationConnector.ApiUrl)))
+            {
+                config.Set(SystranMachineTranslationConnector.ApiUrl, defaultApiUrl);
+            }
+
+            this.client = new ApiClient(config.Get(SystranMachineTranslationConnector.ApiUrl));
             Configuration.apiClient = client;
             Dictionary<String, String> keys = new Dictionary<String, String>();
            
@@ -55,6 +61,7 @@ namespace Progress.Sitefinity.Translations
         internal const string ConnectorName = "SystranMachineTranslation";
         internal const string ConnectorTitle = "Systran Machine Translation";
         internal const string ApiKey = "apiKey";
+        internal const string ApiUrl = "apiUrl";
         internal const string NoApiKeyExceptionMessage = "No API key configured for azure translations connector.";
 
         private ApiClient client;

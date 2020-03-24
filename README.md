@@ -31,7 +31,7 @@ To configure the *SystranMachineTranslationConnector* connector in Sitefinity CM
 2. Expand the <i>Parameters</i> section of the For <strong>SystranMachineTranslation</strong> connector, enter and save the following <i>Keys</i>: 
    **NOTE:** The following parameters must be obtained from Systran.io https://platform.systran.net/user/admin#/apiKeys .
  * <strong>apiKey</strong> </br>In <i>Value</i>, enter the api key
- * <strong>apiUrl</strong> </br>The Systran API Url, if not set, the default value **https://api-platform.systran.net** will be used
+ * <strong>apiUrl</strong> </br>The Systran API Url. If not set, the default value **https://api-platform.systran.net** will be used
 3. To enable the connector, for <strong>SystranMachineTranslation</strong> in the <i>Enabled</i> field, enter <strong>true</strong>.
 4. Save your changes.
 

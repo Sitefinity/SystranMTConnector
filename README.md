@@ -3,6 +3,8 @@ Progress.Sitefinity.Translations.SystranMachineTranslationConnector
 
 >**Latest supported version**: Sitefinity CMS 12.1.7100.0
 
+>**Documentation articles**: [Custom translation connector](https://www.progress.com/documentation/sitefinity-cms/custom-translation-connector)
+
 ### Overview
 
 When working with the Sitefinity CMS *Translation* module, you can benefit from a number of translation connectors that you use out-of-the-box with minimum setup. To serve your requirements, you can also implement your own translation connector with custom logic. 
@@ -15,9 +17,7 @@ This tutorial provides you with a sample that you use to implement a custom tran
  You have added atleast one additinal language to the website. Otherwise, you will not see the translations screen in the administrations tab of your application.
 - You must have obtained API key and API URL from Systran.io https://platform.systran.net/user/admin#/apiKeys.
 
-Currently, **SYSTRAN Pure Neural Server** machine translation service supports two-letter ISO language codes like 'en' 'fr' 'de' 'es' 'nl' etc., you can use neutral culture like 'en', or specify a mapping between the specific culture and neutral culture in the translations advanced settings screen: <i>Administration >> Settings >> Advanced >> Culture mappings </i> text box.
-
-### Instalation
+### Installation
 
 Add the *Systran Machine Translation* sample project to your solution. To do this:
 
@@ -29,16 +29,20 @@ Add the *Systran Machine Translation* sample project to your solution. To do thi
 5. In _SitefinityWebApp_, add a reference to the *SystranMachineTranslation* project.
 6. Build your solution.
 
-## Configure the connector
+### Configure the connector
 
 To configure the *SystranMachineTranslationConnector* connector, perform the following:
 
 1. In Sitefinity CMS, navigate to _Administration >> Settings >> Advanced >> Translations >> Connectors_.
 2. Expand the _Parameters_ section of the _SystranMachineTranslation_ connector
 3. Enter and save the following _Keys_:   
-   - <strong>apiKey</strong> </br>In <i>Value</i>, enter the api key
-   - <strong>apiUrl</strong> </br>The Systran API Url. If not set, the default value **https://api-platform.systran.net** will be used
-3. To enable the connector, for <strong>SystranMachineTranslation</strong> in the <i>Enabled</i> field, enter <strong>true</strong>.
+   - `apiKey`  
+    In <i>Value</i>, enter the API key that you obtained from Systran.
+   - `apiUrl`  
+    This is the Systran API URL. If you do not set it, the system uses the default value *https://api-platform.systran.net*.
+3. To enable the connector, under _SystranMachineTranslation_, in input field _Enabled_, enter `true`.
 4. Save your changes.
 
-Note: SYSTRAN Pure Neural Server is not supporting culture-specific languages.
+### Limitations
+
+SYSTRAN Pure Neural Server deos not support culture-specific languages. The service supports two-letter ISO language codes, such as _en_, _fr_, _de_, etc. You can use neutral culture, such as _en_, or specify a mapping between the specific culture and neutral culture in the translations advanced settings. To do this, navigate to <i>Administration >> Settings >> Advanced >> Culture mappings</i>.

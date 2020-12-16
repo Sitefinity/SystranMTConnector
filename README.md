@@ -1,7 +1,7 @@
 Progress.Sitefinity.Translations.SystranMachineTranslationConnector
 ===========================================
 
->**Latest supported version**: Sitefinity CMS 13.1.7400.0
+>**Latest supported version**: Sitefinity CMS 13.2.7500.0
 
 >**Documentation articles**: [Custom translation connector](https://www.progress.com/documentation/sitefinity-cms/custom-translation-connector)
 

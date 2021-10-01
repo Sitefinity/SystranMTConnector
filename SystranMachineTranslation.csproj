@@ -215,7 +215,6 @@
     <None Include=".nuget\NuGet.targets">
       <SubType>Designer</SubType>
     </None>
-    <None Include="app.config" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
